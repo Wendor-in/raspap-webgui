@@ -17,6 +17,8 @@ function DisplayWireGuardConfig()
             SaveWireGuardConfig($status);
         } elseif (isset($_POST['savewgsettings']) && $optConf == 'upload' && is_uploaded_file($_FILES["wgFile"]["tmp_name"])) {
             SaveWireGuardUpload($status, $_FILES['wgFile'], $optRules);
+        } elseif (isset($_POST['savewgsettings']) && isset($_POST['wg_penabled']) ) {
+            SaveWireGuardConfig($status);
         } elseif (isset($_POST['startwg'])) {
             $status->addMessage('Attempting to start WireGuard', 'info');
             exec('sudo /bin/systemctl start wg-quick@wg0', $return);
@@ -164,7 +166,7 @@ function SaveWireGuardConfig($status)
     $good_input = true;
     $peer_id = 1;
     // Validate server input
-    if ($_POST['wg_senabled'] == 1) {
+    if ($_POST['wgSrvEnable'] == 1) {
         if (isset($_POST['wg_srvport'])) {
             if (strlen($_POST['wg_srvport']) > 5 || !is_numeric($_POST['wg_srvport'])) {
                 $status->addMessage('Invalid value for server local port', 'danger');
@@ -221,7 +223,7 @@ function SaveWireGuardConfig($status)
     // Save settings
     if ($good_input) {
         // server (wg0.conf)
-        if ($_POST['wg_senabled'] == 1) {
+        if ($_POST['wgSrvEnable'] == 1) {
             // fetch server private key from filesytem
             $wg_srvprivkey = exec('sudo cat '. RASPI_WIREGUARD_PATH .'wg-server-private.key', $return);
             $config[] = '[Interface]';
@@ -268,7 +270,6 @@ function SaveWireGuardConfig($status)
             }
             $config[] = '';
             $config = join(PHP_EOL, $config);
-
             file_put_contents("/tmp/wgdata", $config);
             system('sudo cp /tmp/wgdata '.RASPI_WIREGUARD_PATH.'client.conf', $return);
         } else {
