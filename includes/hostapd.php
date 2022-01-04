@@ -107,6 +107,12 @@ function DisplayHostAPDConfig()
         $status->addMessage('Setting transmit power to '.$_POST['txpower'].'.', 'success');
         $txpower = $_POST['txpower'];
     }
+    // map wpa_key_mgmt to security types
+    if ($arrConfig['wpa_key_mgmt'] == 'WPA-PSK WPA-PSK-SHA256 SAE') {
+        $arrConfig['wpa'] = 4;
+    } elseif ($arrConfig['wpa_key_mgmt'] == 'SAE') {
+        $arrConfig['wpa'] = 5;
+    }
 
     echo renderTemplate(
         "hostapd", compact(
