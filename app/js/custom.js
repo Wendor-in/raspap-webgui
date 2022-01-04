@@ -385,6 +385,28 @@ function loadChannelSelect(selected) {
     });
 }
 
+/* Loads 802.11w select option based on security type
+ * WPA3-Personal and WPA2/WPA3-Personal (transitional) require
+ * different settings, which are selected automatically.
+ * Security types without 802.11w support force a disabled value.
+ */
+function load80211wSelect() {
+    var 80211w_select = $('#cbx80211w');
+    var wpa = $('#cbxwpa').val();
+    if (wpa === '4') { // WPA2 and WPA3-Personal (transitional)
+        80211w_select.val('1');
+        mfp_select.attr('disabled','disabled');
+    } else if (wpa === '5') { // WPA3-Personal (required)
+        80211w_select.val('2');
+        80211w_select.attr('disabled','disabled');
+    } else if (wpa === 'none') {
+        80211w_select.val('3');
+        80211w_select.attr('disabled','disabled');
+    } else {
+        80211w_select.removeAttr('disabled');
+    }
+}
+
 /* Updates the selected blocklist
  * Request is passed to an ajax handler to download the associated list.
  * Interface elements are updated to indicate current progress, status.
