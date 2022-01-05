@@ -142,7 +142,7 @@ function SaveHostAPDConfig($wpa_array, $enc_types, $modes, $interfaces, $status)
         && array_key_exists($_POST['wpa_pairwise'], $enc_types) 
         && array_key_exists($_POST['hw_mode'], $modes))
     ) {
-        error_log("Attempting to set hostapd config with wpa='".$_POST['wpa']."', wpa_pairwise='".$_POST['wpa_pairwise']."' and hw_mode='".$_POST['hw_mode']."'");
+        error_log("Attempting to set hostapd config with wpa='".$_POST['wpa']."', wpa_pairwise='".$_POST['wpa_pairwise']."' and hw_mode='".$_POST['hw_mode']."'");  // FIXME: log injection
         return false;
     }
     // Validate input
@@ -225,7 +225,6 @@ function SaveHostAPDConfig($wpa_array, $enc_types, $modes, $interfaces, $status)
 
     // Verify input
     if (empty($_POST['ssid']) || strlen($_POST['ssid']) > 32) {
-        // Not sure of all the restrictions of SSID
         $status->addMessage('SSID must be between 1 and 32 characters', 'danger');
         $good_input = false;
     }
@@ -255,8 +254,6 @@ function SaveHostAPDConfig($wpa_array, $enc_types, $modes, $interfaces, $status)
     }
 
     if (! in_array($_POST['interface'], $interfaces)) {
-        // The user is probably up to something here but it may also be a
-        // genuine error.
         $status->addMessage('Unknown interface '.htmlspecialchars($_POST['interface'], ENT_QUOTES), 'danger');
         $good_input = false;
     }
@@ -339,7 +336,6 @@ function SaveHostAPDConfig($wpa_array, $enc_types, $modes, $interfaces, $status)
             $config[] = 'nohook wpa_supplicant';
             $config[] = PHP_EOL;
         } else {
-            // Default wlan0 config
             $def_ip = array();
             $config = [ '# RaspAP '.$ap_iface.' configuration' ];
             $config[] = 'interface '.$ap_iface;
