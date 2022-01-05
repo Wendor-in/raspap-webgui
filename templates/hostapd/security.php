@@ -12,7 +12,7 @@
       </div>
       <div class="form-group">
         <label for="cbx80211w"><?php echo _("802.11w"); ?></label>
-        <i class="fas fa-question-circle text-muted" data-toggle="tooltip" data-placement="auto" title="" data-original-title="The 802.11w amendment applies only to a set of robust management frames that are protected by the Protected Management Frames (PMF) service. These include Disassociation, Deauthentication, and Robust Action frames."></i>
+        <i class="fas fa-question-circle text-muted" data-toggle="tooltip" data-placement="auto" title="" data-original-title="802.11w extends strong cryptographic protection to a select set of robust management frames, including Deauthentication, Disassociation and certain categories of Action Management frames. Collectively, this is known as Management Frame Protection (MFP)."></i>
         <?php SelectorOptions('80211w', $arr80211w, $arrConfig['ieee80211w'], 'cbx80211w'); ?>
      </div>
 
