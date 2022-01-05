@@ -163,6 +163,7 @@ function contentLoaded() {
             break;
         case "hostapd_conf":
             loadChannel();
+            load80211wSelect();
             break;
         case "dhcpd_conf":
             loadInterfaceDHCPSelect();
