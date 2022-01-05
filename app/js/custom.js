@@ -1,10 +1,6 @@
 function msgShow(retcode,msg) {
-<<<<<<< HEAD
-    if(retcode == 0) { var alertType = 'success';
-=======
     if(retcode == 0) {
         var alertType = 'success';
->>>>>>> b3b7aabb7e9daeb0747be76d753cc6c7f7f52024
     } else if(retcode == 2 || retcode == 1) {
         var alertType = 'danger';
     }
@@ -142,12 +138,8 @@ function setupBtns() {
     $('#btnSummaryRefresh').click(function(){getAllInterfaces();});
     $('.intsave').click(function(){
         var int = $(this).data('int');
-<<<<<<< HEAD
-        saveNetworkSettings(int);
-=======
         var opts = $(this).data('opts');
         saveNetDeviceSettings(int,opts);
->>>>>>> b3b7aabb7e9daeb0747be76d753cc6c7f7f52024
     });
     $('.intapply').click(function(){
         applyNetworkSettings();
@@ -190,8 +182,6 @@ function loadWifiStations(refresh) {
 }
 $(".js-reload-wifi-stations").on("click", loadWifiStations(true));
 
-<<<<<<< HEAD
-=======
 function saveNetDeviceSettings(int,opts="") {
     var frmInt = $('#frm-'+int).find(':input');
     var arrFormData = {};
@@ -210,7 +200,6 @@ function saveNetDeviceSettings(int,opts="") {
     });
 }
 
->>>>>>> b3b7aabb7e9daeb0747be76d753cc6c7f7f52024
 /*
 Populates the DHCP server form fields
 Option toggles are set dynamically depending on the loaded configuration
