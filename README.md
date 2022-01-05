@@ -26,18 +26,13 @@ As part of the initial rollout of Insiders, all previous one-time backers of Ras
 
 ## Exclusive features
 The following features are currently available exclusively to sponsors. A tangible side benefit of sponsorship is that Insiders are able to help steer future development of RaspAP. This is done through your Insiders access to discussions, feature requests, issues and pull requests in the private GitHub repository.
-
-✅ [Manage OpenVPN client configs](https://docs.raspap.com/openvpn/#multiple-client-configs)  
-✅ [OpenVPN certificate authentication](https://docs.raspap.com/openvpn/#certificate-authentication)      
-✅ OpenVPN service logging  
-✅ Night mode toggle  
-✅ Restrict network to static clients  
-✅ [WireGuard support](https://docs.raspap.com/wireguard/)  
-✅ [Set AP transmit power](https://docs.raspap.com/ap-basics/#transmit-power)  
-✅ Mobile data client support  
-✅ Firewall settings  
+  
+✅ [Network device management](https://docs.raspap.com/net-devices/)  
+✅ [Firewall settings](https://docs.raspap.com/firewall/)  
 ⚙️ Traffic shaping (in progress)  
 ⚙️ Printable WiFi signs (in progress)  
+⚙️ 802.11w Protected Management Frames (in progress)  
+⚙️ WPA3-Personal AP security (in progress)  
 
 Look for the list above to grow as we add more exlcusive features. Have an idea or suggestion for a future enhancement? Start or join an [Insiders discussion](https://github.com/RaspAP/raspap-insiders/discussions) and let us know!
 
