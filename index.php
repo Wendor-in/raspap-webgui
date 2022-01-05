@@ -7,15 +7,15 @@
  * Enables use of simple web interface rather than SSH to control WiFi and related services  on the Raspberry Pi.
  * Recommended distribution is Raspberry Pi OS (32-bit) Lite. Specific instructions to install the supported software are
  * in the README and original post by @SirLagz. For a quick run through, the packages required for the WebGUI are:
- * lighttpd (version 1.4.59 installed via apt)
- * php-cgi (version 7.4.25 installed via apt)
+ * lighttpd (version 1.4.53 installed via apt)
+ * php-cgi (version 7.3.19-1 installed via apt)
  * along with their supporting packages, php7.3 will also need to be enabled.
  *
  * @author  Lawrence Yau <sirlagz@gmail.com>
  * @author  Bill Zimmerman <billzimmerman@gmail.com>
  * @license GNU General Public License, version 3 (GPL-3.0)
- * @version 2.8.2
- * @link    https://github.com/RaspAP/raspap-webgui/
+ * @version 2.8.0
+ * @link    https://github.com/raspap/raspap-insiders/
  * @link    https://raspap.com/
  * @see     http://sirlagz.net/2013/02/08/raspap-webgui/
  *
@@ -41,6 +41,7 @@ require_once 'includes/system.php';
 require_once 'includes/sysstats.php';
 require_once 'includes/configure_client.php';
 require_once 'includes/networking.php';
+require_once 'includes/firewall.php';
 require_once 'includes/themes.php';
 require_once 'includes/data_usage.php';
 require_once 'includes/about.php';
@@ -177,6 +178,11 @@ $bridgedEnabled = getBridgedState();
            <a class="nav-link" href="torproxy_conf"><i class="fas fa-eye-slash fa-fw mr-2"></i><span class="nav-label"><?php echo _("TOR proxy"); ?></a>
         </li>
           <?php endif; ?>
+          <?php if (RASPI_FIREWALL_ENABLED) : ?>
+        <li class="nav-item">
+          <a class="nav-link" href="firewall_conf"><i class="fas fa-shield-alt fa-fw mr-2"></i><span class="nav-label"><?php echo _("Firewall"); ?></a>
+        </li>
+          <?php endif; ?>
           <?php if (RASPI_CONFAUTH_ENABLED) : ?>
         <li class="nav-item">
         <a class="nav-link" href="auth_conf"><i class="fas fa-user-lock fa-fw mr-2"></i><span class="nav-label"><?php echo _("Authentication"); ?></a>
@@ -274,8 +280,8 @@ $bridgedEnabled = getBridgedState();
         case "/torproxy_conf":
             DisplayTorProxyConfig();
             break;
-        case "/torproxy_conf":
-            DisplayTorProxyConfig();
+        case "/firewall_conf":
+            DisplayFirewallConfig();
             break;
         case "/auth_conf":
             DisplayAuthConfig($config['admin_user'], $config['admin_pass']);

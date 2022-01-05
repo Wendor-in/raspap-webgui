@@ -757,7 +757,8 @@ function qr_encode($str)
     return preg_replace('/(?<!\\\)([\":;,])/', '\\\\\1', $str);
 }
 
-function evalHexSequence($string) {
+function evalHexSequence($string)
+{
     $evaluator = function ($input) {
 	return hex2bin($input[1]);
     };
