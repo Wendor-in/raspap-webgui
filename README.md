@@ -37,10 +37,19 @@ The following features are currently available exclusively to sponsors. A tangib
 Look for the list above to grow as we add more exlcusive features. Have an idea or suggestion for a future enhancement? Start or join an [Insiders discussion](https://github.com/RaspAP/raspap-insiders/discussions) and let us know!
 
 ## Funding targets
-Following is a list of funding targets. When a funding target is reached, the features that are tied to it are merged back into RaspAP and released to the public for general availability.
+Below is a list of funding targets. When a funding target is reached, the features that are tied to it are merged back into RaspAP and released to the public for general availability.
 
-### $500 
-The first **Insiders Edition** includes the exclusive features listed above.
+### $1000 - 2nd Insiders Edition
+The  **2nd Insiders Edition** includes the exclusive features listed above.
+
+### $500 - 1st Insiders Edition (completed)
+✅ Multiple OpenVPN client configs  
+✅ OpenVPN certificate authentication  
+✅ OpenVPN service logging  
+✅ Night mode toggle  
+✅ Restrict network to static clients  
+✅ WireGuard support  
+✅ Set AP transmit power  
 
 ## Frequently asked questions
 
