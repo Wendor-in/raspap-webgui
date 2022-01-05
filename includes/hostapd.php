@@ -90,7 +90,7 @@ function DisplayHostAPDConfig()
         $arrConfig['disassoc_low_ack_bool'] = 1;
     }
     // assign country_code from iw reg if not set in config
-    if (!isset($arrConfig['country_code']) && isset($country_code[0])) {
+    if (empty($arrConfig['country_code']) && isset($country_code[0])) {
         $arrConfig['country_code'] = $country_code[0];
     }
     // set txpower with iw if value is non-default ('auto')
