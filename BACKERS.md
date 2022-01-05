@@ -19,8 +19,8 @@ The following features are currently available exclusively to sponsors. A tangib
 
  ✅ [Network device management](https://docs.raspap.com/net-devices/)   
  ✅ [Firewall settings](https://docs.raspap.com/firewall/)   
- ⚙️ 802.11w Protected Management Frames (in progress)  
- ⚙️ WPA3-Personal AP security (in progress)   
+ ✅ 802.11w Protected Management Frames
+ ✅ WPA3-Personal AP security  
  ⚙️ Traffic shaping (in progress)   
  ⚙️ Printable Wi-Fi signs (in progress)   
  
