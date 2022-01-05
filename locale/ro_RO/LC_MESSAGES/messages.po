@@ -3,148 +3,148 @@ msgstr ""
 "Project-Id-Version: raspap\n"
 "Report-Msgid-Bugs-To: Bill Zimmerman <billzimmerman@gmail.com>\n"
 "POT-Creation-Date: 2017-10-19 08:56+0000\n"
-"PO-Revision-Date: 2022-01-05 11:43\n"
+"PO-Revision-Date: 2021-12-31 14:29\n"
 "Last-Translator: Bill Zimmerman <billzimmerman@gmail.com>\n"
-"Language-Team: Korean\n"
-"Language: ko_KR\n"
+"Language-Team: Romanian\n"
+"Language: ro_RO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);\n"
 "X-Crowdin-Project: raspap\n"
 "X-Crowdin-Project-ID: 395801\n"
-"X-Crowdin-Language: ko\n"
+"X-Crowdin-Language: ro\n"
 "X-Crowdin-File: /master/locale/en_US/LC_MESSAGES/messages.po\n"
 "X-Crowdin-File-ID: 10\n"
 
 #: index.php
 msgid "RaspAP Wifi Configuration Portal"
-msgstr "RaspAP WiFi 환경설정 포탈"
+msgstr "Portal de configurare RaspAP Wi-Fi"
 
 msgid "Toggle navigation"
-msgstr "토글 내비게이션"
+msgstr "Comută navigarea"
 
 msgid "RaspAP Wifi Portal"
-msgstr "RaspAP WiFi 포탈"
+msgstr "Portal Wifi RaspAP"
 
 msgid "Dashboard"
-msgstr "대시보드 "
+msgstr "Tablou de bord"
 
 msgid "WiFi client"
-msgstr "WiFi 클라이언트"
+msgstr "Client Wi-Fi"
 
 msgid "Hotspot"
-msgstr "핫스팟"
+msgstr "Hotspot"
 
 msgid "Memory Use"
-msgstr "메모리 사용량"
+msgstr "Memorie utilizată"
 
 msgid "CPU Temp"
-msgstr "CPU 온도"
+msgstr "Temp CPU"
 
 msgid "Networking"
-msgstr "네트워킹"
+msgstr "Reţele"
 
 msgid "DHCP Server"
-msgstr "DHCP 서버"
+msgstr "Serverul DHCP"
 
 msgid "OpenVPN"
-msgstr "OpenVPN 환경설정"
+msgstr "OpenVPN"
 
 msgid "TOR proxy"
-msgstr "TOR 프록시 구성"
+msgstr "Proxy TOR"
 
 msgid "Authentication"
-msgstr "입증"
+msgstr "Autentificare"
 
 msgid "Change Theme"
-msgstr "테마 변경 "
+msgstr "Schimbare temă"
 
 msgid "System"
-msgstr "시스템"
+msgstr "Sistem"
 
 msgid "About RaspAP"
-msgstr "RaspAP 소개 "
+msgstr "Despre RaspAP"
 
 #: includes/admin.php
 msgid "Authentication settings"
-msgstr "인증 설정"
+msgstr "Setări de autentificare"
 
 msgid "New passwords do not match"
-msgstr "새 패스워드가 일치하지 않습니다"
+msgstr "Parolele noi nu coincid"
 
 msgid "Username must not be empty"
-msgstr "사용자명은 절대 비워 두면 안됩니다"
+msgstr "Numele de utilizator trebuie să fie completat"
 
 msgid "Admin password updated"
-msgstr "관리자 비밀번호가 업데이트되었습니다"
+msgstr "Parolă de administrare actualizată"
 
 msgid "Failed to update admin password"
-msgstr "관리자 비밀번호 업데이트에 실패했습니다"
+msgstr "Actualizarea parolei de administrare a eșuat"
 
 msgid "Old password does not match"
-msgstr "기존 비밀번호가 일치하지 않습니다 "
+msgstr "Parola anterioară nu se potrivește"
 
 msgid "Username"
-msgstr "사용자명"
+msgstr "Nume de utilizator"
 
 msgid "Old password"
-msgstr "기존 비밀번호 "
+msgstr "Parola anterioară"
 
 msgid "New password"
-msgstr "새 패스워드"
+msgstr "Parola nouă"
 
 msgid "Repeat new password"
-msgstr "새 패스워드 다시 입력"
+msgstr "Reintroduceți parola nouă"
 
 #: includes/configure_client.php
 msgid "Client settings"
-msgstr "클라이언트 설정 "
+msgstr "Setările clientului"
 
 msgid "SSID"
-msgstr "네트워크 이름 (SSID)"
+msgstr "SSID"
 
 msgid "Channel"
-msgstr "채널 "
+msgstr "Canal"
 
 msgid "Security"
-msgstr "보안 "
+msgstr "Securitate"
 
 msgid "Passphrase"
-msgstr "암호 "
+msgstr "Parolă"
 
 msgid "Wifi settings updated successfully"
-msgstr "Wifi 설정이 성공적으로 업데이트되었습니다"
+msgstr "Setările Wi-Fi actualizate cu succes"
 
 msgid "Wifi settings updated but cannot restart (cannot execute 'wpa_cli reconfigure')"
-msgstr "Wifi 설정이 업데이트되었지만 재시작할 수 없습니다('wpa_cli reconfigure'를 실행할 수 없습니다)"
+msgstr "Setările Wi-Fi actualizate dar nu pot reporni (nu se poate executa 'wpa_cli reconfigurare')"
 
 msgid "Wifi settings failed to be updated"
-msgstr "Wifi 설정 업데이트에 실패했습니다"
+msgstr "Setările Wi-Fi nu au putut fi actualizate"
 
 msgid "Failed to update wifi settings"
-msgstr "Wifi 설정 업데이트를 실패했습니다"
+msgstr "Actualizarea setărilor Wi-Fi a eșuat"
 
 msgid "Rescan"
-msgstr "다시 스캔"
+msgstr "Scanează din nou"
 
 msgid "Update"
-msgstr "업데이트"
+msgstr "Actualizare"
 
 msgid "Add"
-msgstr "추가"
+msgstr "Adaugă"
 
 msgid "Delete"
-msgstr "삭제"
+msgstr "Șterge"
 
 msgid "Show"
-msgstr "보기 "
+msgstr "Afișează"
 
 msgid "Hide"
-msgstr "숨기기 "
+msgstr "Ascunde"
 
 msgid "Not configured"
-msgstr "환결설정 안됨"
+msgstr "Neconfigurat"
 
 msgid "Connected"
 msgstr ""
@@ -156,7 +156,7 @@ msgid "Nearby"
 msgstr ""
 
 msgid "<strong>Note:</strong> WEP access points appear as 'Open'. RaspAP does not currently support connecting to WEP"
-msgstr "<strong>주의:</strong> WEP 접근점은 'Open'으로 표시됩니다. RaspAP은 현재 WEP 연결을 지원하지 않습니다"
+msgstr "<strong>Notă:</strong> Punctele de acces WEP apar ca 'Open'. RaspAP nu acceptă conectarea la WEP"
 
 msgid "No Wifi stations found"
 msgstr ""
@@ -175,97 +175,97 @@ msgstr ""
 
 #: includes/dashboard.php
 msgid "Interface Information"
-msgstr "인터페이스 정보 "
+msgstr "Informaţii Interfaţă"
 
 msgid "Interface Name"
-msgstr "인터페이스 이름"
+msgstr "Numele interfeței"
 
 msgid "IPv4 Address"
-msgstr "IPv4 주소"
+msgstr "Adresă IPv4"
 
 msgid "IPv6 Address"
-msgstr "IPv6 주소"
+msgstr "Adresă IPv6"
 
 msgid "Subnet Mask"
-msgstr "서브넷 마스크 "
+msgstr "Mască subrețea"
 
 msgid "Mac Address"
-msgstr "맥 주소"
+msgstr "Adresa Mac"
 
 msgid "Interface Statistics"
-msgstr "인터페이스 통계 "
+msgstr "Statistici interfață"
 
 msgid "Received Packets"
-msgstr "받은 패킷 "
+msgstr "Pachete primite"
 
 msgid "Received Bytes"
-msgstr "받은 바이트량"
+msgstr "Octeți primiți"
 
 msgid "Transferred Packets"
-msgstr "전송된 패킷"
+msgstr "Pachete transferate"
 
 msgid "Transferred Bytes"
-msgstr "전송된 바이트량"
+msgstr "Octeți transferați"
 
 msgid "Wireless Client"
-msgstr "무선 클라이언트"
+msgstr "Client wireless"
 
 msgid "Connected To"
-msgstr "연결"
+msgstr "Conectat la"
 
 msgid "AP Mac Address"
-msgstr "AP Mac 주소"
+msgstr "Adresă Mac a AP"
 
 msgid "Bitrate"
-msgstr "비트 전송률"
+msgstr "Bitrate"
 
 msgid "Signal Level"
-msgstr "신호 레벨"
+msgstr "Nivelul semnalului"
 
 msgid "Transmit Power"
-msgstr "송신 전력"
+msgstr "Putere de transmisie"
 
 msgid "Frequency"
-msgstr "주파수 "
+msgstr "Frecvența"
 
 msgid "Link Quality"
-msgstr "링크 품질 "
+msgstr "Calitate legătură"
 
 msgid "Information provided by ip and iw and from system"
-msgstr "ip 및 iw, 시스템에서 제공한 정보"
+msgstr "Informaţii furnizate de ip, iw şi de sistem"
 
 msgid "No MAC Address Found"
-msgstr "MAC 주소를 찾을 수 없습니다"
+msgstr "Nu s-a găsit nicio adresă MAC"
 
 msgid "No IP Address Found"
-msgstr "IP 주소를 찾지 못했습니다"
+msgstr "Nu s-a găsit nicio adresă IP"
 
 msgid "No Subnet Mask Found"
-msgstr "서브넷 마스크를 찾지 못했습니다"
+msgstr "Nu s-a găsit nicio mască de subrețea"
 
 msgid "No Data"
-msgstr "데이터 없음"
+msgstr "Nu există date"
 
 msgid "Not connected"
-msgstr "연결되지 않음 "
+msgstr "Neconectat"
 
 msgid "Interface is up"
-msgstr "인터페이스가 작동 중입니다"
+msgstr "Interfață activă"
 
 msgid "Interface is down"
-msgstr "인터페이스가 다운되었습니다"
+msgstr "Interfață inactivă"
 
 msgid "Interface already down"
-msgstr "인터페이스가 이미 작동 중지되었습니다"
+msgstr "Interfața era inactivă"
 
 msgid "Start wlan0"
-msgstr "wlan0 시작"
+msgstr "Pornire wlan0"
 
 msgid "Stop wlan0"
-msgstr "wlan0 중지"
+msgstr "Oprire wlan0"
 
 msgid "Connected Devices"
-msgstr "연결된 디바이스 "
+msgstr "Dispozitive conectate"
 
 msgid "Client: Ethernet cable"
 msgstr ""
@@ -323,257 +323,257 @@ msgstr ""
 
 #: includes/dhcp.php
 msgid "DHCP server settings"
-msgstr "DHCP 서버 설정 "
+msgstr "Setări server DHCP"
 
 msgid "Client list"
-msgstr "클라이언트 목록 "
+msgstr "Listă clienți"
 
 msgid "Interface"
-msgstr "인터페이스 "
+msgstr "Interfață"
 
 msgid "Enable DHCP for this interface"
-msgstr "이 인터페이스에 대해 DHCP 활성화"
+msgstr "Activează DHCP pentru această interfață"
 
 msgid "Enable this option if you want RaspAP to assign IP addresses on the selected interface."
-msgstr "RaspAP가 선택한 인터페이스에 IP 주소를 할당하도록하려면 이 옵션을 활성화합니다."
+msgstr "Activați această opțiune dacă doriți ca RaspAP să atribuie adrese IP pe interfața selectată."
 
 msgid "DNS Server"
-msgstr "DNS 서버"
+msgstr "Server DNS"
 
 msgid "Starting IP Address"
-msgstr "시작 IP 주소"
+msgstr "Adresă IP de început"
 
 msgid "Ending IP Address"
-msgstr "끝 IP 주소"
+msgstr "Adresă IP finală"
 
 msgid "Static Leases"
-msgstr "고정 임대"
+msgstr "Adrese atribuite static"
 
 msgid "Add static DHCP lease"
-msgstr "정적 DHCP 대여(lease) 추가"
+msgstr "Adaugă adrese statice serverului DHCP"
 
 msgid "Lease Time"
-msgstr "대여 시간(Lease Time)"
+msgstr "Timp de atribuire"
 
 msgid "Interval"
-msgstr "간격 "
+msgstr "Interval"
 
 msgid "Active DHCP leases"
-msgstr "활성 DHCP 임대"
+msgstr "Adrese atribuite DHCP"
 
 msgid "Expire time"
-msgstr "만료 시간 "
+msgstr "Timp de expirare"
 
 msgid "MAC Address"
-msgstr "MAC 주소"
+msgstr "Adresă MAC"
 
 msgid "Optional comment"
 msgstr ""
 
 msgid "Host name"
-msgstr "호스트명"
+msgstr "Denumire client"
 
 msgid "Client ID"
-msgstr "클라이언트 ID"
+msgstr "Identitatea clientului"
 
 msgid "Information provided by Dnsmasq"
-msgstr "Dnsmasq가 제공한 정보"
+msgstr "Informații furnizate de Dnsmasq"
 
 msgid "Stop dnsmasq"
-msgstr "dnsmasq 중지"
+msgstr "Oprire dnsmasq"
 
 msgid "Start dnsmasq"
-msgstr "dnsmasq 시작 "
+msgstr "Pornire Dnsmasq"
 
 msgid "Dnsmasq configuration updated successfully"
-msgstr "Dnsmasq 구성이 성공적으로 업데이트되었습니다"
+msgstr "Configurarea dnsmasq actualizată cu succes"
 
 msgid "dnsmasq already running"
-msgstr "dnsmasq가 이미 실행 중입니다 "
+msgstr "dnsmasq este pornit"
 
 msgid "Successfully started dnsmasq"
-msgstr "dnsmasq를 성공적으로 시작했습니다"
+msgstr "Dnsmasq pornit cu succes"
 
 msgid "Failed to start dnsmasq"
-msgstr "openvpn 시작 실패 "
+msgstr "Pornirea dnsmasq a eșuat"
 
 msgid "Successfully stopped dnsmasq"
-msgstr "dnsmasq를 성공적으로 중지하였습니다"
+msgstr "Dnsmasq oprit cu succes"
 
 msgid "Failed to stop dnsmasq"
-msgstr "dnsmasq 중지에 실패했습니다 "
+msgstr "Oprirea dnsmasq a eșuat"
 
 msgid "dnsmasq already stopped"
-msgstr "dnsmasq가 이미 중지되었습니다 "
+msgstr "dnsmasq deja oprit"
 
 msgid "Dnsmasq is running"
-msgstr "Dnsmasq가 실행 중입니다"
+msgstr "Dnsmasq rulează"
 
 msgid "Dnsmasq is not running"
-msgstr "Dnsmasq가 실행 중이 아닙니다 "
+msgstr "Dnsmasq nu rulează"
 
 msgid "Upstream DNS servers"
-msgstr "업스트림(Upstream) DNS 서버"
+msgstr "Servere DNS upstream"
 
 msgid "Only ever query DNS servers configured below"
-msgstr "아래에 구성된 DNS 서버 만 쿼리합니다."
+msgstr "Numai serverele DNS configurate mai jos"
 
 msgid "Enable this option if you want RaspAP to <b>send DNS queries to the servers configured below exclusively</b>. By default RaspAP also uses its upstream DHCP server's name servers."
-msgstr ""
+msgstr "Activați această opțiune dacă doriți ca RaspAP să <b>trimită interogări DNS la serverele configurate mai jos exclusiv</b>. În mod implicit, RaspAP folosește și serverele sale DHCP upstream."
 
 msgid "This option adds <code>no-resolv</code> to the dnsmasq configuration."
-msgstr ""
+msgstr "Această opțiune adaugă <code>no-resolv</code> la configurația dnsmasq."
 
 msgid "Add upstream DNS server"
-msgstr ""
+msgstr "Adaugă server DNS upstream"
 
 msgid "Format"
-msgstr "규격"
+msgstr "Format"
 
 msgid "Choose a hosted server"
-msgstr ""
+msgstr "Alege un server"
 
 msgid "Enable these options to log DHCP server activity."
-msgstr ""
+msgstr "Activați aceste opțiuni pentru a înregistra activitatea serverului DHCP."
 
 msgid "Log DHCP requests"
-msgstr ""
+msgstr "Înregistrează cererile DHCP"
 
 msgid "Log DNS queries"
-msgstr ""
+msgstr "Înregistrează interogările DNS"
 
 msgid "Restrict access"
-msgstr ""
+msgstr "Restricționare acces"
 
 msgid "Limit network access to static clients"
-msgstr ""
+msgstr "Limitează accesul la rețea pentru clienții statici"
 
 msgid "Enable this option if you want RaspAP to <b>ignore any clients</b> which are not specified in the static leases list."
-msgstr ""
+msgstr "Activați această opțiune dacă doriți ca RaspAP să <b>ignore orice clienți</b> care nu sunt specificați în lista de leasing static."
 
 msgid "This option adds <code>dhcp-ignore</code> to the dnsmasq configuration."
-msgstr ""
+msgstr "Această opțiune adaugă <code>dhcp-ignore</code> la configurația dnsmasq."
 
 msgid "Clients with a particular hardware MAC address can always be allocated the same IP address."
-msgstr ""
+msgstr "Clienților cu o anumită adresă MAC hardware li se poate atribui întotdeauna aceeași adresă IP."
 
 msgid "This option adds <code>dhcp-host</code> entries to the dnsmasq configuration."
-msgstr ""
+msgstr "Această opţiune adaugă <code>dhcp-host</code> intrărilor la configuraţia dnsmasq."
 
 msgid "This toggles the <code>gateway</code>/<code>nogateway</code> option for this interface in the DHCPCD configuration."
-msgstr ""
+msgstr "Comută între <code>gateway</code>/<code>nogateway</code> pentru această interfaţă în configuraţia DHCPCD."
 
 #: includes/hostapd.php
 msgid "Basic"
-msgstr "베이직"
+msgstr "Setări de bază"
 
 msgid "Advanced"
-msgstr "고급"
+msgstr "Setări avansate"
 
 msgid "Basic settings"
-msgstr "기본 설정"
+msgstr "Setări de bază"
 
 msgid "Wireless Mode"
-msgstr "무선 모드 "
+msgstr "Standard"
 
 msgid "Security settings"
-msgstr "보안 설정 "
+msgstr "Setări de securitate"
 
 msgid "Security type"
-msgstr "보안 유형 "
+msgstr "Tipul de securitate"
 
 msgid "Encryption Type"
-msgstr "암호화 유형"
+msgstr "Tipul de criptare"
 
 msgid "PSK"
-msgstr "PSK (암호키)"
+msgstr "PSK"
 
 msgid "Advanced settings"
-msgstr "고급 설정 "
+msgstr "Setări avansate"
 
 msgid "Country Code"
-msgstr "국가 코드 "
+msgstr "Codul țării"
 
 msgid "Information provided by hostapd"
-msgstr "hostapd가 제공한 정보"
+msgstr "Informații furnizate de hostapd"
 
 msgid "Attempting to start hotspot"
-msgstr "핫스팍 시작 시도 중"
+msgstr "Se încearcă pornirea hotspot-ului"
 
 msgid "Attempting to stop hotspot"
-msgstr "hotspot 중지 시도 중입니다 "
+msgstr "Se încearcă oprirea hotspot-ului"
 
 msgid "HostAPD is not running"
-msgstr "HostAPD가 구동 중이 아닙니다"
+msgstr "HostAPD nu rulează"
 
 msgid "HostAPD is running"
-msgstr "HostAPD가 실행 중입니다"
+msgstr "HostAPD rulează"
 
 msgid "SSID must be between 1 and 32 characters"
-msgstr "SSID는 반드시 1자에서 32자 사이여야 합니다"
+msgstr "SSID trebuie să aibă între 1 și 32 de caractere"
 
 msgid "WPA passphrase must be between 8 and 63 characters"
-msgstr "WPA 암호는 반드시 8자에서 63자 사이여야 합니다"
+msgstr "Parola WPA trebuie să aibă între 8 şi 63 de caractere"
 
 msgid "Unknown interface"
-msgstr "알 수 없는 인터페이스 "
+msgstr "Interfață necunoscută"
 
 msgid "Country code must be blank or two characters"
-msgstr "국가 코드는 비워 두거나 2 글자이어야 합니다 "
+msgstr "Codul țării trebuie să fie necompletat sau format din două caractere"
 
 msgid "Wifi Hotspot settings saved"
-msgstr "Wifi 핫스팟 설정이 저장되었습니다"
+msgstr "Setările punctului de acces Wi-Fi sunt salvate"
 
 msgid "Unable to save wifi hotspot settings"
-msgstr "Wifi 핫스팟 설정을 저장할 수 없습니다 "
+msgstr "Nu s-au putut salva setările pentru punctul de acces Wi-Fi"
 
 msgid "Start hotspot"
-msgstr "핫스팟 시작 "
+msgstr "Pornește punctul de acces"
 
 msgid "Stop hotspot"
-msgstr "핫스팟 중지"
+msgstr "Oprește punctul de acces"
 
 msgid "Restart hotspot"
-msgstr "핫스팟 재시작"
+msgstr "Restarteaza punctul de acces"
 
 msgid "Enable logging"
-msgstr "로깅 사용하기"
+msgstr "Activează înregistrarea"
 
 msgid "Logfile output"
-msgstr "로그파일 출력"
+msgstr "Jurnal"
 
 msgid "WiFi client AP mode"
-msgstr "WiFi 클라이언트 AP 모드 "
+msgstr "Mod AP al clientului Wi-Fi"
 
 msgid "Bridged AP mode"
-msgstr "브릿지 AP 모드"
+msgstr "Mod bridged AP"
 
 msgid "Hide SSID in broadcast"
-msgstr "방송 중에 SSID 숨기기 "
+msgstr "Ascunde transmiterea SSID"
 
 msgid "Maximum number of clients"
-msgstr "클라이언트 최대 개수"
+msgstr "Număr maxim de clienți"
 
 msgid "Configures the <code>max_num_sta</code> option of hostapd. The default and maximum is 2007. If empty or 0, the default applies."
 msgstr ""
 
 msgid "Beacon interval"
-msgstr ""
+msgstr "Interval semnalizator"
 
 msgid "Disable <code>disassoc_low_ack</code>"
-msgstr ""
+msgstr "Dezactivează <code>disassoc_low_ack</code>"
 
 msgid "Do not disassociate stations based on excessive transmission failures."
-msgstr ""
+msgstr "Nu disocia stațiile pe baza erorilor de transmisie excesive."
 
 msgid "Executing RaspAP service start"
-msgstr ""
+msgstr "Pornire serviciu RaspAP"
 
 msgid "Close"
-msgstr "닫기"
+msgstr "Închide"
 
 msgid "Enable this option to log <code>hostapd</code> activity."
-msgstr ""
+msgstr "Activează această opţiune pentru a înregistra activitatea <code>hostapd</code>."
 
 msgid "Transmit power (dBm)"
 msgstr ""
@@ -586,46 +586,46 @@ msgstr ""
 
 #: includes/networking.php
 msgid "Summary"
-msgstr "요약 "
+msgstr "Sumar"
 
 msgid "Internet connection"
-msgstr ""
+msgstr "Conexiune la internet"
 
 msgid "Current settings"
-msgstr "현재 설정"
+msgstr "Setările curente"
 
 msgid "Default Gateway"
-msgstr "기본 게이트웨이"
+msgstr "Gateway implicit"
 
 msgid "Alternate DNS Server"
-msgstr "대체 DNS 서버 "
+msgstr "Server DNS alternativ"
 
 msgid "Adapter IP Address Settings"
-msgstr "어댑터 IP 주소 설정"
+msgstr "Setări adresă IP adaptor"
 
 msgid "Enable Fallback to Static Option"
-msgstr "정적 옵션으로 대체 시스템 사용"
+msgstr "Utilizați o adresă statică dacă serverul nu răspunde"
 
 msgid "Static IP"
-msgstr "고정 IP"
+msgstr "IP static"
 
 msgid "Enabled"
-msgstr "활성화"
+msgstr "Activat"
 
 msgid "Disabled"
-msgstr "비활성화 "
+msgstr "Dezactivat"
 
 msgid "Static IP Options"
-msgstr "고정 IP 옵션"
+msgstr "Opțiuni IP static"
 
 msgid "Metric"
-msgstr ""
+msgstr "Metric"
 
 msgid "Apply settings"
-msgstr "설정 적용"
+msgstr "Aplicare setări"
 
 msgid "Information provided by /sys/class/net"
-msgstr "/sys/class/net이 제공한 정보 "
+msgstr "Informații furnizate de /sys/class/net"
 
 msgid "Network Devices"
 msgstr ""
@@ -680,349 +680,349 @@ msgstr ""
 
 #: includes/system.php
 msgid "System Information"
-msgstr "시스템 정보"
+msgstr "Informații Sistem"
 
 msgid "Language"
-msgstr "언어 "
+msgstr "Limbă"
 
 msgid "Language settings"
-msgstr "언어 설정 "
+msgstr "Setări limbă"
 
 msgid "Select a language"
-msgstr "언어 선택 "
+msgstr "Selectați limba"
 
 msgid "Language setting saved"
-msgstr "언어 설정이 저장되었습니다"
+msgstr "Setarea limbii salvată"
 
 msgid "Console"
-msgstr "콘솔 "
+msgstr "Consolă"
 
 msgid "Hostname"
-msgstr "호스트 이름"
+msgstr "Nume gazdă"
 
 msgid "Pi Revision"
-msgstr "Pi 리비전"
+msgstr "Model Pi"
 
 msgid "Uptime"
-msgstr "가동시간"
+msgstr "Timp de funcționare"
 
 msgid "Memory Used"
-msgstr "사용된 메모리"
+msgstr "Memorie utilizată"
 
 msgid "CPU Load"
-msgstr "CPU 로드"
+msgstr "Încărcare procesor"
 
 msgid "Reboot"
-msgstr "리부팅"
+msgstr "Restartează"
 
 msgid "Shutdown"
-msgstr "기기 끄기"
+msgstr "Inchide"
 
 msgid "System Rebooting Now!"
-msgstr "지금 시스템을 재부팅합니다!"
+msgstr "Sistemul reporneşte acum!"
 
 msgid "System Shutting Down Now!"
-msgstr "시스템이 지금 정지됩니다!"
+msgstr "Sistemul se închide acum!"
 
 msgid "Web server port"
-msgstr "웹서버 포트"
+msgstr "Portul serverului web"
 
 msgid "Web server bind address"
-msgstr "웹서버 바인드 주소"
+msgstr "Adresă de legătură server web"
 
 #: includes/themes.php
 msgid "Theme settings"
-msgstr "테마 설정"
+msgstr "Setări temă"
 
 msgid "Select a theme"
-msgstr "테마 선택 "
+msgstr "Selectaţi o temă"
 
 msgid "Color"
-msgstr "색상"
+msgstr "Culoare"
 
 #: includes/data_usage.php
 msgid "Data usage"
-msgstr "데이터 사용량 "
+msgstr "Utilizarea datelor"
 
 msgid "Data usage monitoring"
-msgstr "데이터 사용량 모니터링"
+msgstr "Monitorizare utilizare date"
 
 msgid "Hourly traffic amount"
-msgstr "시간별 트래픽량"
+msgstr "Trafic pe oră"
 
 msgid "Daily traffic amount"
-msgstr "일일 트래픽양 "
+msgstr "Trafic zilnic"
 
 msgid "Monthly traffic amount"
-msgstr "월간 트래픽량"
+msgstr "Trafic lunar"
 
 msgid "Hourly"
-msgstr "시간별"
+msgstr "Pe oră"
 
 msgid "Daily"
-msgstr "일일"
+msgstr "Zilnic"
 
 msgid "Monthly"
-msgstr "월간"
+msgstr "Lunar"
 
 msgid "interface"
-msgstr "인터페이스"
+msgstr "interfață"
 
 msgid "date"
-msgstr "날짜"
+msgstr "dată"
 
 msgid "Send MB"
-msgstr "MB 보내기 "
+msgstr "MO trimiși"
 
 msgid "Receive MB"
-msgstr "MB 받기 "
+msgstr "MO recepționați"
 
 msgid "Information provided by vnstat"
-msgstr "vnstat 제공 정보"
+msgstr "Informaţii furnizate de vnstat"
 
 msgid "Loading {0} bandwidth chart"
-msgstr "{0} 대역폭 차트 로딩 "
+msgstr "Se încarcă {0} graficul lățimii de bandă"
 
 msgid "Showing {0} to {1} of {2} entries"
-msgstr "{2}개 항목 중 {0}에서 {1}까지 표시"
+msgstr "Se afișează {0} la {1} din {2} intrări"
 
 #: includes/openvpn.php
 msgid "OpenVPN is not running"
-msgstr "OpenVPN은 실행 중이 아닙니다"
+msgstr "OpenVPN nu funcționează"
 
 msgid "OpenVPN is running"
-msgstr "OpenVPN이 구동 중입니다"
+msgstr "OpenVPN rulează"
 
 msgid "Server settings"
-msgstr "서버 설정"
+msgstr "Setări server"
 
 msgid "Select OpenVPN configuration file (.ovpn)"
-msgstr "OpenVPN 구성 파일 (.ovpn) 선택"
+msgstr "Selectaţi fişierul de configurare OpenVPN (.ovpn)"
 
 msgid "Client Log"
-msgstr "클라이언트 로그 "
+msgstr "Jurnal client"
 
 msgid "Port"
-msgstr "포트 "
+msgstr "Port"
 
 msgid "Protocol"
-msgstr "프로토콜"
+msgstr "Protocol"
 
 msgid "Root CA certificate"
-msgstr "루트 CA 인증서"
+msgstr "Certificat Root CA"
 
 msgid "Server certificate"
-msgstr "서버 인증서 "
+msgstr "Certificat server"
 
 msgid "Diffie Hellman parameters"
-msgstr "Diffie Hellman 매개 변수"
+msgstr "Parametrii Diffie Hellman"
 
 msgid "KeepAlive"
-msgstr "기본 연결 유지(KeepAlive)"
+msgstr "Ține activ"
 
 msgid "Server log"
-msgstr "서버 로그"
+msgstr "Jurnal server"
 
 msgid "Start OpenVPN"
-msgstr "OpenVPN 시작"
+msgstr "Pornește OpenVPN"
 
 msgid "Stop OpenVPN"
-msgstr "OpenVPN 중지"
+msgstr "Oprește OpenVPN"
 
 msgid "Information provided by openvpn"
-msgstr "openvpn이 제공한 정보 "
+msgstr "Informaţii furnizate de openvpn"
 
 msgid "Attempting to start openvpn"
-msgstr "openvpn 시작 시도 중입니다 "
+msgstr "Se încearcă pornirea openvpn"
 
 msgid "Attempting to stop openvpn"
-msgstr "openvpn 중지 시도 중입니다 "
+msgstr "Se încearcă oprirea openvpn"
 
 msgid "Configurations"
-msgstr "환경설정"
+msgstr "Configurații"
 
 msgid "Currently available OpenVPN client configurations are displayed below."
-msgstr ""
+msgstr "Configurațiile clientului OpenVPN disponibile sunt afișate mai jos."
 
 msgid "Activating a configuraton will restart the <code>openvpn-client</code> service."
-msgstr ""
+msgstr "Activarea unei configurații va reporni serviciul <code>openvpn-client</code>."
 
 msgid "Delete OpenVPN client"
-msgstr ""
+msgstr "Ștergere client OpenVPN"
 
 msgid "Delete client configuration? This cannot be undone."
-msgstr ""
+msgstr "Ștergeți configurarea clientului? Această acțiune nu poate fi anulată."
 
 msgid "Activate OpenVPN client"
-msgstr ""
+msgstr "Activare client OpenVPN"
 
 msgid "Activate client configuration? This will restart the openvpn-client service."
-msgstr ""
+msgstr "Activați configurarea clientului? Aceasta va reporni serviciul openvpn-client."
 
 msgid "Activate"
-msgstr "활성화"
+msgstr "Activează"
 
 msgid "Cancel"
-msgstr "취소"
+msgstr "Anulează"
 
 msgid "Enable this option to log <code>openvpn</code> activity."
-msgstr ""
+msgstr "Activați această opțiune pentru a înregistra activitatea <code>openvpn</code>."
 
 msgid "Authentification Method"
-msgstr ""
+msgstr "Metoda de autentificare"
 
 msgid "Username and password"
-msgstr ""
+msgstr "Nume utilizator și parolă"
 
 msgid "Certificates"
-msgstr "인증서"
+msgstr "Certificate"
 
 msgid "Enter username and password"
-msgstr "사용자 이름과 암호를 입력하십시오"
+msgstr "Introduceți numele utilizator și parola"
 
 msgid "Certificates in the configuration file"
-msgstr "인증서의 구성파일"
+msgstr "Certificate în fișierul de configurare"
 
 msgid "RaspAP supports certificates by including them in the configuration file."
-msgstr ""
+msgstr "RaspAP acceptă certificate prin includerea lor în fișierul de configurare."
 
 msgid "Signing certification authority (CA) certificate (e.g. <code>ca.crt</code>): enclosed in <code>&lt;ca> ... &lt;/ca></code> tags."
-msgstr ""
+msgstr "Se semnează certificatul 'certification authority' (CA) (de ex. <code>ca.crt</code>): inclus în etichetele <code>&lt;ca> ... &lt;/ca></code>."
 
 msgid "Client certificate (public key) (e.g. <code>client.crt</code>): enclosed in <code>&lt;cert> ... &lt;/cert></code> tags."
-msgstr ""
+msgstr "Certificatul clientului (cheie publică) (de ex. <code>client.crt</code>): inclus în etichetele <code>&lt;cert> ... &lt;/cert></code>."
 
 msgid "Private key of the client certificate (e.g. <code>client.key</code>): enclosed in <code>&lt;key> ... &lt;/key></code> tags."
-msgstr ""
+msgstr "Cheia privată a certificatului clientului (de ex. <code>client.key</code>): inclus în etichetele <code>&lt;key> ... &lt;/key></code>."
 
 msgid "Configuration File"
-msgstr "설정 파일"
+msgstr "Fișier de configurare"
 
 #: includes/torproxy.php
 msgid "TOR is not running"
-msgstr "TOR는 실행 중이 아닙니다 "
+msgstr "TOR nu rulează"
 
 msgid "TOR is running"
-msgstr "TOR가 실행 중입니다 "
+msgstr "TOR rulează"
 
 msgid "Relay"
-msgstr "릴레이"
+msgstr "Releu"
 
 msgid "Relay settings"
-msgstr "릴레이 설정 "
+msgstr "Setări releu"
 
 msgid "Nickname"
-msgstr "닉네임"
+msgstr "Pseudonim"
 
 msgid "Address"
-msgstr "주소  "
+msgstr "Adresă"
 
 msgid "Start TOR"
-msgstr "TOR 시작 "
+msgstr "Pornește TOR"
 
 msgid "Stop TOR"
-msgstr "TOR 중지"
+msgstr "Oprește TOR"
 
 msgid "Information provided by tor"
-msgstr "tor 제공 정보"
+msgstr "Informaţii furnizate de tor"
 
 msgid "Attempting to start TOR"
-msgstr "TOR 시작 시도 중입니다 "
+msgstr "Se încearcă pornirea TOR"
 
 msgid "Attempting to stop TOR"
-msgstr "TOR 중지 시도 중입니다 "
+msgstr "Se încearcă oprirea TOR"
 
 #: template/dashboard.php
 msgid "Bridged AP mode is enabled. For Hostname and IP, see your router's admin page."
-msgstr ""
+msgstr "Modul AP punte este activat. Pentru Nume gazdă și IP, vedeți pagina de administrare a routerului."
 
 #: common form controls
 msgid "Save settings"
-msgstr "설정 저장"
+msgstr "Salvare setări"
 
 msgid "Refresh"
-msgstr "새로 고침"
+msgstr "Reîmprospătare"
 
 msgid "running"
-msgstr "실행 "
+msgstr "rulează"
 
 msgid "stopped"
-msgstr "중지"
+msgstr "oprit"
 
 msgid "Remove"
-msgstr "삭제"
+msgstr "Șterge"
 
 msgid "up"
-msgstr "작동"
+msgstr "activ"
 
 msgid "down"
-msgstr "다운"
+msgstr "inactiv"
 
 msgid "adblock"
-msgstr "광고차단(adblock)"
+msgstr "adblock"
 
 msgid "Ad Blocking"
-msgstr "광고(Ad) 차단중"
+msgstr "Blocare reclame"
 
 msgid "Start Ad Blocking"
-msgstr "광고(Ad)차단 시작"
+msgstr "Pornește Blocarea Reclamelor"
 
 msgid "Restart Ad Blocking"
-msgstr "광고(Ad)차단 재시작"
+msgstr "Repornește Blocarea Reclamelor"
 
 msgid "Blocklist settings"
-msgstr "차단리스트 설정"
+msgstr "Setari lista de blocați"
 
 msgid "Enable blocklists"
-msgstr "차단리스트 활성화"
+msgstr "Activare lista de blocați"
 
 msgid "Enable this option if you want RaspAP to <b>block DNS requests for ads, tracking and other virtual garbage</b>. Blocklists are gathered from multiple, actively maintained sources and automatically updated, cleaned, optimized and moderated on a daily basis."
-msgstr ""
+msgstr "Activați această opțiune dacă doriți ca RaspAP să <b>blocheze cererile DNS pentru reclame, urmărire și alte gunoaie virtuale</b>. Listele de blocați sunt colectate din surse multiple, întreținute în mod activ și actualizate automat, curățate, optimizate și moderate zilnic."
 
 msgid "This option adds <code>conf-file</code> and <code>addn-hosts</code> to the dnsmasq configuration."
-msgstr ""
+msgstr "Această opțiune adaugă <code>conf-file</code> și <code>addn-hosts</code> la configurația dnsmasq."
 
 msgid "Choose a blocklist provider"
-msgstr ""
+msgstr "Alegeți un furnizor de lista de blocați"
 
 msgid "Hostnames blocklist last updated"
-msgstr ""
+msgstr "Lista numelor gazdă blocate ultima dată actualizată"
 
 msgid "Domains blocklist last updated"
-msgstr ""
+msgstr "Ultima actualizare a listei de domenii blocate"
 
 msgid "Update now"
-msgstr "지금 업데이트 시작"
+msgstr "Actualizați acum"
 
 msgid "Statistics"
-msgstr "통계"
+msgstr "Statistici"
 
 msgid "Information provided by adblock"
-msgstr ""
+msgstr "Informaţie furnizateă de adblock"
 
 msgid "Enable custom blocklist"
-msgstr ""
+msgstr "Activează lista de blocare personalizată"
 
 msgid "Define custom hosts to be blocked by entering an IPv4 or IPv6 address followed by any whitespace (spaces or tabs) and the host name."
-msgstr ""
+msgstr "Definiţi gazdele personalizate care să fie blocate prin introducerea unei adrese IPv4 sau IPv6 urmată de orice spaţiu alb (spaţii sau taburi) şi numele gazdei."
 
 msgid "<b>IPv4 example:</b> 0.0.0.0 badhost.com"
-msgstr ""
+msgstr "<b>exemplu IPv4:</b> 0.0.0.0 badhost.com"
 
 msgid "This option adds an <code>addn-hosts</code> directive to the dnsmasq configuration."
-msgstr ""
+msgstr "Această opțiune adaugă o directivă <code>addn-hosts</code> la configurația dnsmasq."
 
 msgid "Custom blocklist not defined"
-msgstr ""
+msgstr "Lista de blocati personalizată nu este definită"
 
 msgid "Invalid custom IP address found on line "
-msgstr ""
+msgstr "Adresă IP particularizată nevalidă găsită în linie "
 
 msgid "Invalid custom host found on line "
-msgstr ""
+msgstr "Gazdă personalizată nevalidă în linie "
 
 msgid "Tunnel settings"
-msgstr ""
+msgstr "Setări tunel"
 
 msgid "Configuration Method"
 msgstr ""
@@ -1055,7 +1055,7 @@ msgid "Create a local WireGuard config"
 msgstr ""
 
 msgid "Enable server"
-msgstr "활성화된 서버"
+msgstr "Activează serverul"
 
 msgid "Enable this option to secure network traffic by creating an encrypted tunnel between RaspAP and configured peers."
 msgstr ""
@@ -1064,76 +1064,76 @@ msgid "This setting generates a new WireGuard <code>.conf</code> file on this de
 msgstr ""
 
 msgid "Local public key"
-msgstr "로컬 공개키(public Key)"
+msgstr "Cheie publică locală"
 
 msgid "Local Port"
-msgstr "로컬 포트"
+msgstr "Port local"
 
 msgid "IP Address"
-msgstr "IP 주소"
+msgstr "Adresă IP"
 
 msgid "DNS"
 msgstr "DNS"
 
 msgid "Peer"
-msgstr "피어"
+msgstr "Partener"
 
 msgid "Enable peer"
-msgstr "활성화된 피어"
+msgstr "Activare partener"
 
 msgid "Enable this option to encrypt traffic by creating a tunnel between RaspAP and this peer."
-msgstr ""
+msgstr "Activați această opțiune pentru a cripta traficul prin crearea unui tunel între RaspAP și acest partener."
 
 msgid "This option adds <code>client.conf</code> to the WireGuard configuration."
-msgstr ""
+msgstr "Această opţiune adaugă <code>client.conf</code> la configuraţia WireGuard."
 
 msgid "Peer public key"
-msgstr "피어 공개키(Public Key)"
+msgstr "Cheie publică partener"
 
 msgid "Endpoint address"
-msgstr ""
+msgstr "Adresă punct final"
 
 msgid "Allowed IPs"
-msgstr ""
+msgstr "IP-uri permise"
 
 msgid "Persistent keepalive"
+msgstr "Persistent keepalive"
+
+msgid "Display WireGuard debug log"
 msgstr ""
 
-msgid "Enable this option to display an updated <code>wg-quick</code> debug log."
-msgstr ""
-
-msgid "WireGuard debug log updated"
+msgid "Enable this option to display an updated WireGuard debug log."
 msgstr ""
 
 msgid "Scan this QR code with your client to connect to this tunnel"
-msgstr ""
+msgstr "Scanați acest cod QR cu clientul pentru a vă conecta la acest tunel"
 
 msgid "or download the <code>client.conf</code> file to your device."
-msgstr ""
+msgstr "sau descărcați fișierul <code>client.conf</code> pe dispozitivul dvs."
 
 msgid "Download"
-msgstr "다운로드"
+msgstr "Descărcare"
 
 msgid "Start WireGuard"
-msgstr "WireGuard 시작"
+msgstr "Pornește WireGuard"
 
 msgid "Stop WireGuard"
-msgstr "WireGuard 정지"
+msgstr "Oprește WireGuard"
 
 msgid "Information provided by wireguard"
-msgstr ""
+msgstr "Informaţii oferite de wireguard"
 
 msgid "Attempting to start WireGuard"
-msgstr ""
+msgstr "Se încearcă pornirea WireGuard"
 
 msgid "Attempting to stop WireGuard"
-msgstr ""
+msgstr "Se încearcă oprirea WireGuard"
 
 msgid "WireGuard configuration updated successfully"
-msgstr ""
+msgstr "Configurarea WireGuard actualizată cu succes"
 
 msgid "WireGuard configuration failed to be updated"
-msgstr ""
+msgstr "Configurarea WireGuard nu a putut fi actualizată"
 
 msgid "Client Firewall"
 msgstr ""

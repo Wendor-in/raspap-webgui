@@ -93,7 +93,7 @@ function DisplayHostAPDConfig()
         $arrConfig['disassoc_low_ack_bool'] = 1;
     }
     // assign country_code from iw reg if not set in config
-    if (!isset($arrConfig['country_code']) && isset($country_code[0])) {
+    if (empty($arrConfig['country_code']) && isset($country_code[0])) {
         $arrConfig['country_code'] = $country_code[0];
     }
     // set txpower with iw if value is non-default ('auto')
@@ -235,7 +235,6 @@ function SaveHostAPDConfig($wpa_array, $enc_types, $modes, $interfaces, $status)
 
     // Verify input
     if (empty($_POST['ssid']) || strlen($_POST['ssid']) > 32) {
-        // Not sure of all the restrictions of SSID
         $status->addMessage('SSID must be between 1 and 32 characters', 'danger');
         $good_input = false;
     }
@@ -265,8 +264,6 @@ function SaveHostAPDConfig($wpa_array, $enc_types, $modes, $interfaces, $status)
     }
 
     if (! in_array($_POST['interface'], $interfaces)) {
-        // The user is probably up to something here but it may also be a
-        // genuine error.
         $status->addMessage('Unknown interface '.htmlspecialchars($_POST['interface'], ENT_QUOTES), 'danger');
         $good_input = false;
     }

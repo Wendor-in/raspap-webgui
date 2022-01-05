@@ -139,10 +139,10 @@ function _get_linux_distro() {
 # Sets php package option based on Linux version, abort if unsupported distro
 function _set_php_package() {
     case $RELEASE in
-       18.04|19.10|11*) # Ubuntu Server & Debian 11 
+        18.04|19.10|11*) # Ubuntu Server & Debian 11
             php_package="php7.4-cgi"
             phpcgiconf="/etc/php/7.4/cgi/php.ini" ;;
-        10*)
+        10*|11*)
             php_package="php7.3-cgi"
             phpcgiconf="/etc/php/7.3/cgi/php.ini" ;;
         9*)
@@ -159,7 +159,7 @@ function _set_php_package() {
 function _install_dependencies() {
     _install_log "Installing required packages"
     _set_php_package
-   if [ "$php_package" = "php7.4-cgi" ] && [ ${OS,,} = "ubuntu" ]; then 
+    if [ "$php_package" = "php7.4-cgi" ] && [ ${OS,,} = "ubuntu" ]; then
         echo "Adding apt-repository ppa:ondrej/php"
         sudo apt-get install $apt_option software-properties-common || _install_status 1 "Unable to install dependency"
         sudo add-apt-repository $apt_option ppa:ondrej/php || _install_status 1 "Unable to add-apt-repository ppa:ondrej/php"
@@ -352,21 +352,19 @@ function _prompt_install_openvpn() {
 
 # Prompt to install WireGuard
 function _prompt_install_wireguard() {
-    if [ "$insiders" == 1 ]; then
-        _install_log "Configure WireGuard support"
-        echo -n "Install WireGuard and enable VPN tunnel configuration? [Y/n]: "
-        if [ "$assume_yes" == 0 ]; then
-            read answer < /dev/tty
-            if [ "$answer" != "${answer#[Nn]}" ]; then
-                echo -e
-            else
-                _install_wireguard
-            fi
-        elif [ "$wg_option" == 1 ]; then
-            _install_wireguard
+    _install_log "Configure WireGuard support"
+    echo -n "Install WireGuard and enable VPN tunnel configuration? [Y/n]: "
+    if [ "$assume_yes" == 0 ]; then
+        read answer < /dev/tty
+        if [ "$answer" != "${answer#[Nn]}" ]; then
+            echo -e
         else
-            echo "(Skipped)"
+            _install_wireguard
         fi
+    elif [ "$wg_option" == 1 ]; then
+        _install_wireguard
+    else
+        echo "(Skipped)"
     fi
 }
 
