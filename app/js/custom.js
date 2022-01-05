@@ -163,6 +163,7 @@ function contentLoaded() {
             break;
         case "hostapd_conf":
             loadChannel();
+            load80211wSelect();
             break;
         case "dhcpd_conf":
             loadInterfaceDHCPSelect();
@@ -383,6 +384,28 @@ function loadChannelSelect(selected) {
         });
         channel_select.val(selected);
     });
+}
+
+/* Loads 802.11w select option based on user selected security type.
+ * WPA3-Personal and WPA2/WPA3-Personal (transitional) require
+ * specific settings, which are selected automatically.
+ * Security types without 802.11w support force a disabled state.
+ */
+function load80211wSelect() {
+    var _80211w_select = $('#cbx80211w');
+    var wpa = $('#cbxwpa').val();
+    if (wpa === '4') { // WPA2 and WPA3-Personal (transitional)
+        _80211w_select.val('1'); // enabled
+        _80211w_select.attr('disabled','disabled');
+    } else if (wpa === '5') { // WPA3-Personal (required)
+        _80211w_select.val('2'); // required
+        _80211w_select.attr('disabled','disabled');
+    } else if (wpa === 'none' || wpa === '1' || wpa === '3' ) { // unsupported modes
+        _80211w_select.val('3'); // disabled
+        _80211w_select.attr('disabled','disabled');
+    } else {
+        _80211w_select.removeAttr('disabled');
+    }
 }
 
 /* Updates the selected blocklist
