@@ -26,13 +26,13 @@ As part of the initial rollout of Insiders, all previous one-time backers of Ras
 
 ## Exclusive features
 The following features are currently available exclusively to sponsors. A tangible side benefit of sponsorship is that Insiders are able to help steer future development of RaspAP. This is done through your Insiders access to discussions, feature requests, issues and pull requests in the private GitHub repository.
-  
-✅ [Network device management](https://docs.raspap.com/net-devices/)  
-✅ [Firewall settings](https://docs.raspap.com/firewall/)  
-✅ 802.11w Protected Management Frames  
-✅ WPA3-Personal AP security  
-⚙️ Traffic shaping (in progress)  
-⚙️ Printable WiFi signs (in progress)  
+
+ ✅ [Network device management](https://docs.raspap.com/net-devices/)    
+ ✅ [Firewall settings](https://docs.raspap.com/firewall/)   
+ ✅ [WPA3-Personal AP security](https://docs.raspap.com/ap-basics/#wpa3-personal)  
+ ✅ [802.11w Protected Management Frames](https://docs.raspap.com/ap-basics/#80211w)    
+ ⚙️ Traffic shaping (in progress)   
+ ⚙️ Printable Wi-Fi signs (in progress)   
 
 Look for the list above to grow as we add more exlcusive features. Have an idea or suggestion for a future enhancement? Start or join an [Insiders discussion](https://github.com/RaspAP/raspap-insiders/discussions) and let us know!
 
