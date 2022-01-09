@@ -34,14 +34,14 @@ $password = isset($hostapd['wpa_psk']) ? $hostapd['wpa_psk'] : $hostapd['wpa_pas
         <div class="row text-center">
           <div class="col">
             <div class="mt-5 mb-5">
-              <h3><i class="fas fa-wifi"></i> <?php echo _("Wi-Fi Connect"); ?></h3>
+              <h2><i class="fas fa-wifi"></i> <?php echo _("Wi-Fi Connect"); ?></h2>
             </div>
           </div>
         </div><!-- /row -->
 
         <div class="row">
           <div class="col"></div>
-          <div class="col-6">
+          <div class="col-5">
             <img src="../img/wifi-qr-code.php" class="figure-img img-fluid" alt="RaspAP Wifi QR code" style="width:100%;">
           </div>
           <div class="col"></div>
@@ -51,8 +51,8 @@ $password = isset($hostapd['wpa_psk']) ? $hostapd['wpa_psk'] : $hostapd['wpa_pas
           <div class="col"></div>
           <div class="col-8">
             <div class="mt-4">
-              <?php echo _("To connect with your phone or tablet, scan the QR code above with your camera app."); ?>
-              <?php echo _("For other devices, use the login credentials below."); ?>
+              <div><?php echo _("To connect with your phone or tablet, scan the QR code above with your camera app."); ?></div>
+              <div><?php echo _("For other devices, use the login credentials below."); ?></div>
             </div>
           </div>
           <div class="col"></div>

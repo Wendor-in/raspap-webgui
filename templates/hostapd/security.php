@@ -30,7 +30,7 @@
         <figcaption class="figure-caption">
             <?php echo sprintf(_("Scan this QR code directly or %s %sprint a sign%s for your users."),
                 '<i class="fas fa-print"></i>',
-                '<a href="javascript:window.open(\'../app/lib/signprint.php\',\'Print Wi-Fi sign\',\'width=550,height=700\')">',
+                '<a href="javascript:window.open(\'../app/lib/signprint.php\',\'Printable Wi-Fi sign\',\'width=550,height=670\')">',
                 '</a>'); ?>
         </figcaption>
       </figure>
