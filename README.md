@@ -1,5 +1,5 @@
 ![](https://i.imgur.com/FRU1tXF.png)
-[![Release 2.8.2](https://img.shields.io/badge/release-2.8.2-green)](https://github.com/raspap/raspap-insiders/releases) [![Awesome](https://awesome.re/badge.svg)](https://github.com/thibmaek/awesome-raspberry-pi) [![Insiders Edition](https://img.shields.io/static/v1?label=Insiders%20Edition&message=%E2%9D%A4&logo=GitHub&color=ff69b4)](https://github.com/sponsors/RaspAP) ![https://travis-ci.com/github/raspap/raspap-webgui/](https://api.travis-ci.org/RaspAP/raspap-webgui.svg) [![Crowdin](https://badges.crowdin.net/raspap/localized.svg)](https://crowdin.com/project/raspap) [![Twitter URL](https://img.shields.io/twitter/url?label=%40RaspAP&logoColor=%23d8224c&url=https%3A%2F%2Ftwitter.com%2Frasp_ap)](https://twitter.com/rasp_ap) [![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/RaspAP?style=social)](https://www.reddit.com/r/RaspAP/)
+[![Release 2.8.3](https://img.shields.io/badge/release-2.8.3-green)](https://github.com/raspap/raspap-insiders/releases) [![Awesome](https://awesome.re/badge.svg)](https://github.com/thibmaek/awesome-raspberry-pi) [![Insiders Edition](https://img.shields.io/static/v1?label=Insiders%20Edition&message=%E2%9D%A4&logo=GitHub&color=ff69b4)](https://github.com/sponsors/RaspAP) ![https://travis-ci.com/github/raspap/raspap-webgui/](https://api.travis-ci.org/RaspAP/raspap-webgui.svg) [![Crowdin](https://badges.crowdin.net/raspap/localized.svg)](https://crowdin.com/project/raspap) [![Twitter URL](https://img.shields.io/twitter/url?label=%40RaspAP&logoColor=%23d8224c&url=https%3A%2F%2Ftwitter.com%2Frasp_ap)](https://twitter.com/rasp_ap) [![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/RaspAP?style=social)](https://www.reddit.com/r/RaspAP/)
 
 Welcome to **RaspAP Insiders**. You, the members of the Insiders community, support the sponsorware release model, which means that new features are first exclusively released to sponsors as part of Insiders. Read on for details about how this strategy works—and *thank you* for joining us on this journey.
 
@@ -27,12 +27,12 @@ As part of the initial rollout of Insiders, all previous one-time backers of Ras
 ## Exclusive features
 The following features are currently available exclusively to sponsors. A tangible side benefit of sponsorship is that Insiders are able to help steer future development of RaspAP. This is done through your Insiders access to discussions, feature requests, issues and pull requests in the private GitHub repository.
 
- ✅ [Network device management](https://docs.raspap.com/net-devices/)    
- ✅ [Firewall settings](https://docs.raspap.com/firewall/)   
+ ✅ [Network device management](https://docs.raspap.com/net-devices/)  
+ ✅ [Firewall settings](https://docs.raspap.com/firewall/)  
  ✅ [WPA3-Personal AP security](https://docs.raspap.com/ap-basics/#wpa3-personal)  
- ✅ [802.11w Protected Management Frames](https://docs.raspap.com/ap-basics/#80211w)    
- ⚙️ Traffic shaping (in progress)   
- ⚙️ Printable Wi-Fi signs (in progress)   
+ ✅ [802.11w Protected Management Frames](https://docs.raspap.com/ap-basics/#80211w)  
+ ✅ [Printable Wi-Fi signs](https://docs.raspap.com/ap-basics/#printable-signs)  
+ ⚙️ Traffic shaping (in progress)     
 
 Look for the list above to grow as we add more exlcusive features. Have an idea or suggestion for a future enhancement? Start or join an [Insiders discussion](https://github.com/RaspAP/raspap-insiders/discussions) and let us know!
 
