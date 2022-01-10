@@ -257,3 +257,6 @@ canvas#divDBChartBandwidthhourly {
   color: #ff4500;
 }
 
+figcaption.figure-caption a {
+  color: #858796;
+}

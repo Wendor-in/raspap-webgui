@@ -603,6 +603,21 @@ msgstr "Required (for supported clients)"
 msgid "802.11w extends strong cryptographic protection to a select set of robust management frames, including Deauthentication, Disassociation and certain categories of Action Management frames. Collectively, this is known as Management Frame Protection (MFP)."
 msgstr "802.11w extends strong cryptographic protection to a select set of robust management frames, including Deauthentication, Disassociation and certain categories of Action Management frames. Collectively, this is known as Management Frame Protection (MFP)."
 
+msgid "Scan this QR code directly or %s %sprint a sign%s for your users."
+msgstr "Scan this QR code directly or %s %sprint a sign%s for your users."
+
+msgid "Printable Wi-Fi sign"
+msgstr "Printable Wi-Fi sign"
+
+msgid "To connect with your phone or tablet, scan the QR code above with your camera app."
+msgstr "To connect with your phone or tablet, scan the QR code above with your camera app."
+
+msgid "For other devices, use the login credentials below."
+msgstr "For other devices, use the login credentials below."
+
+msgid "Network"
+msgstr "Network"
+
 #: includes/networking.php
 msgid "Summary"
 msgstr "Summary"
