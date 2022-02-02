@@ -55,6 +55,9 @@
           <!-- Nav tabs -->
           <ul class="nav nav-tabs">
             <li class="nav-item"><a class="nav-link active" id="basictab" href="#basic" aria-controls="basic" data-toggle="tab"><?php echo _("Basic"); ?></a></li>
+            <?php if ( $arrHostapdConf['DualAPEnable'] == 1 ) : ?>
+            <li class="nav-item"><a class="nav-link" id="extendedtab" href="#extended" data-toggle="tab"><?php echo _("Extended"); ?></a></li>
+            <?php endif; ?>
             <li class="nav-item"><a class="nav-link" id="securitytab" href="#security" data-toggle="tab"><?php echo _("Security"); ?></a></li>
             <li class="nav-item"><a class="nav-link" id="advancedtab" href="#advanced" data-toggle="tab"><?php echo _("Advanced"); ?></a></li>
             <li class="nav-item"><a class="nav-link" id="logoutputtab" href="#logoutput" data-toggle="tab"><?php echo _("Logging"); ?></a></li>
@@ -63,6 +66,7 @@
           <!-- Tab panes -->
           <div class="tab-content">
             <?php echo renderTemplate("hostapd/basic", $__template_data) ?>
+            <?php if ( $arrHostapdConf['DualAPEnable'] == 1 ) : echo renderTemplate("hostapd/extended", $__template_data); endif ?>
             <?php echo renderTemplate("hostapd/security", $__template_data) ?>
             <?php echo renderTemplate("hostapd/advanced", $__template_data) ?>
             <?php echo renderTemplate("hostapd/logging", $__template_data) ?>

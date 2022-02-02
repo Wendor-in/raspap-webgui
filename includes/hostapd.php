@@ -192,6 +192,17 @@ function SaveHostAPDConfig($wpa_array, $enc_types, $modes, $interfaces, $status)
             }
         }
     }
+    // Check for Dual Band AP mode checkbox
+    $dualAPEnable = 0;
+    if ($arrHostapdConf['DualAPEnable'] == 0) {
+        if (isset($_POST['dualAPEnable'])) {
+            $dualAPEnable = 1;
+        }
+    } else {
+        if (isset($_POST['dualAPEnable'])) {
+            $dualAPEnable = 1;
+        }
+    }
     // Check for Logfile output checkbox
     $logEnable = 0;
     if ($arrHostapdConf['LogEnable'] == 0) {
@@ -230,6 +241,7 @@ function SaveHostAPDConfig($wpa_array, $enc_types, $modes, $interfaces, $status)
     $cfg['WifiAPEnable'] = ($bridgedEnable == 1 ? $arrHostapdConf['WifiAPEnable'] : $wifiAPEnable);
     $cfg['BridgedEnable'] = $bridgedEnable;
     $cfg['WifiManaged'] = $cli_iface;
+    $cfg['DualAPEnable'] = $dualAPEnable;
     write_php_ini($cfg, RASPI_CONFIG.'/hostapd.ini');
     $_SESSION['ap_interface'] = $session_iface;
 

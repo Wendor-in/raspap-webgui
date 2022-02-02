@@ -22,6 +22,15 @@
     <div class="row">
       <div class="col-md-6 mb-2">
         <div class="custom-control custom-switch">
+          <?php $checked = $arrHostapdConf['DualAPEnable'] == 1 ? 'checked="checked"' : '' ?>
+          <input class="custom-control-input" id="chxdualbandenable" name="dualAPEnable" type="checkbox" value="1" <?php echo $checked ?> />
+          <label class="custom-control-label" for="chxdualbandenable"><?php echo _("Dual band AP mode"); ?></label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-2">
+        <div class="custom-control custom-switch">
           <?php $checked = $arrConfig['ignore_broadcast_ssid'] == 1 || $arrConfig['ignore_broadcast_ssid'] == 2 ? 'checked="checked"' : '' ?>
           <input class="custom-control-input" id="chxhiddenssid" name="hiddenSSID" type="checkbox" value="1" <?php echo $checked ?> />
           <label class="custom-control-label" for="chxhiddenssid"><?php echo _("Hide SSID in broadcast"); ?></label>
