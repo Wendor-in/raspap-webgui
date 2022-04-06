@@ -205,5 +205,6 @@ function DisplayDashboard(&$extraFooterScripts)
     );
     $extraFooterScripts[] = array('src'=>'app/js/dashboardchart.js', 'defer'=>false);
     $extraFooterScripts[] = array('src'=>'app/js/linkquality.js', 'defer'=>false);
+    $extraFooterScripts[] = array('src'=>'app/js/gridstack.js', 'defer'=>false);
 }
 
