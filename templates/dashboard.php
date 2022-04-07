@@ -19,8 +19,8 @@
           <div class="grid-stack" data-gs-width="12">
 
             <!-- Traffic widget -->
-            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="0" gs-w="12" gs-h="5" id="gs-1">
-              <div class="grid-stack-item-content ui-draggable-handle">
+            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="0" gs-w="12" gs-h="5" gs-id="traffic">
+              <div id="gsi-1" class="grid-stack-item-content ui-draggable-handle">
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title"><?php echo _("Hourly traffic amount"); ?></h4>
@@ -34,7 +34,7 @@
             </div><!-- /.grid-stack-item -->
 
             <!-- Client widget -->
-            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="5" gs-w="6" gs-h="3" id="gs-2">
+            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="5" gs-w="6" gs-h="3" gs-id="client">
               <div class="grid-stack-item-content ui-draggable-handle">
                 <div class="card h-100">
                   <div class="card-body wireless">
@@ -136,7 +136,7 @@
             </div><!-- /.grid-stack-item -->
 
             <!-- Connected devices widget -->
-            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="6" gs-y="5" gs-w="6" gs-h="3" id="gs-3">
+            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="6" gs-y="5" gs-w="6" gs-h="3" gs-id="devices">
               <div class="grid-stack-item-content ui-draggable-handle">
                 <div class="card h-100 mb-3">
                 <div class="card-body">
