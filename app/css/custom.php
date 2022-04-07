@@ -223,8 +223,9 @@ pre.unstyled {
   font-size: 0.9rem!important;
 }
 
-canvas#divDBChartBandwidthhourly {
-  height: 350px!important;
+.dbChart {
+  display: flex;
+  height: 80%;
 }
 
 .chart-container {

@@ -20,12 +20,12 @@
 
             <!-- Traffic widget -->
             <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="0" gs-w="12" gs-h="5" gs-id="traffic">
-              <div id="gsi-1" class="grid-stack-item-content ui-draggable-handle">
-                <div class="card">
+              <div class="grid-stack-item-content ui-draggable-handle">
+                <div class="card h-100">
                   <div class="card-body">
                     <h4 class="card-title"><?php echo _("Hourly traffic amount"); ?></h4>
                     <div id="divInterface" class="d-none"><?php echo $apInterface; ?></div>
-                    <div class="col-md-12">
+                    <div class="col dbChart">
                       <canvas id="divDBChartBandwidthhourly"></canvas>
                     </div>
                   </div><!-- /.card-body -->
