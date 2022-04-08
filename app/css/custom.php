@@ -228,6 +228,12 @@ pre.unstyled {
   height: 80%;
 }
 
+.gs-edit {
+  border: 1px dashed #ccc;
+  background-color: #f1faee;
+  border-radius: 4px;
+}
+
 .chart-container {
   height: 150px;
   width: 200px;

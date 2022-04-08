@@ -1,6 +1,7 @@
 var options = {
     animate: true,
     acceptWidgets: true,
+    staticGrid: true,
     dragIn: '.newWidget', // class that can be dragged from outside
     dragInOptions: { revert: 'invalid', scroll: false, appendTo: 'body', helper: 'clone' },
     removable: '#trash', // drag-out delete class
@@ -8,7 +9,6 @@ var options = {
     column: 12,
     maxRow: 12,
     minRow: 1, // prevent grid from collapsing when empty
-    animate: true,
     alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
     resizable: {
         handles: 'e, se, s, sw, w, n'

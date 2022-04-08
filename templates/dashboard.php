@@ -201,6 +201,7 @@
                     <?php endif ?>
                 <?php endif ?>
               <button type="button" onClick="window.location.reload();" class="btn btn-outline btn-primary"><i class="fas fa-sync-alt"></i> <?php echo _("Refresh") ?></button>
+              <button type="button" class="btn btn-outline btn-primary gridstack-edit"><i class="fas fa-pen"></i></button>
             </form>
           </div>
         </div>
