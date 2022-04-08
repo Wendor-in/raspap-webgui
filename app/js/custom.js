@@ -334,6 +334,13 @@ $('#wg-upload,#wg-manual').on('click', function (e) {
     }
 });
 
+// toggles gridstack edit state
+$('.gridstack-edit').on('click',function (e) {
+    $(".grid-stack").toggleClass("gs-edit");
+    var state = grid.opts['staticGrid'];
+    grid.setStatic(!state);
+});
+
 // Add the following code if you want the name of the file appear on select
 $(".custom-file-input").on("change", function() {
   var fileName = $(this).val().split("\\").pop();

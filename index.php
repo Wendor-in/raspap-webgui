@@ -84,6 +84,9 @@ $bridgedEnabled = getBridgedState();
     <!-- Custom Fonts -->
     <link href="dist/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
+    <!-- Gridstack CSS -->
+    <link href="dist/gridstack/gridstack.min.css" rel="stylesheet" />
+
     <!-- RaspAP Fonts -->
     <link href="dist/raspap/css/style.css" rel="stylesheet" type="text/css">
 
@@ -337,6 +340,9 @@ $bridgedEnabled = getBridgedState();
 
     <!-- SB-Admin-2 JavaScript -->
     <script src="dist/sb-admin-2/js/sb-admin-2.js"></script>
+
+    <!-- Gridstack JavaScript -->
+    <script src="dist/gridstack/gridstack-h5.js"></script>
 
     <!-- Custom RaspAP JS -->
     <script src="app/js/custom.js"></script>

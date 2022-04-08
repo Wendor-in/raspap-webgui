@@ -269,8 +269,15 @@ pre.unstyled {
   font-size: 0.9rem!important;
 }
 
-canvas#divDBChartBandwidthhourly {
-  height: 350px!important;
+.dbChart {
+  display: flex;
+  height: 80%;
+}
+
+.gs-edit {
+  border: 1px dashed #ccc;
+  background-color: #f1faee;
+  border-radius: 4px;
 }
 
 .chart-container {

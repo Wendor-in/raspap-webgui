@@ -15,123 +15,133 @@
         </div><!-- /.row -->
       </div><!-- /.card-header -->
       <div class="card-body">
-        <div class="row">
+        <div class="col">
+          <div class="grid-stack" data-gs-width="12">
 
-          <div class="col-lg-12">
-            <div class="card mb-3">
-              <div class="card-body">
-                <h4 class="card-title"><?php echo _("Hourly traffic amount"); ?></h4>
-                <div id="divInterface" class="d-none"><?php echo $apInterface; ?></div>
-                <div class="col-md-12">
-                  <canvas id="divDBChartBandwidthhourly"></canvas>
-                </div>
-              </div><!-- /.card-body -->
-            </div><!-- /.card-->
-          </div>
+            <!-- Traffic widget -->
+            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="0" gs-w="12" gs-h="5" gs-id="traffic">
+              <div class="grid-stack-item-content ui-draggable-handle">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h4 class="card-title"><?php echo _("Hourly traffic amount"); ?></h4>
+                    <div id="divInterface" class="d-none"><?php echo $apInterface; ?></div>
+                    <div class="col dbChart">
+                      <canvas id="divDBChartBandwidthhourly"></canvas>
+                    </div>
+                  </div><!-- /.card-body -->
+                </div><!-- /.card -->
+              </div><!-- /.grid-stack-item-content -->
+            </div><!-- /.grid-stack-item -->
 
-          <div class="col-sm-6 align-items-stretch">
-            <div class="card h-100">
-              <div class="card-body wireless">
-                <h4 class="card-title"><?php echo _("$client_title"); ?></h4>
-                <div class="row ml-1">
-                  <div class="col-sm">
-                    <?php $valEcho=function($cl,$id) {$val = isset($cl[$id])&& !empty($cl[$id]) ? $cl[$id] : "-"; echo  htmlspecialchars($val,ENT_QUOTES);} ?>
-                    <?php if ($clientinfo["type"] == "wlan") : // WIRELESS ?>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Connected To"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"ssidutf8"); ?></div>
+            <!-- Client widget -->
+            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="5" gs-w="6" gs-h="3" gs-id="client">
+              <div class="grid-stack-item-content ui-draggable-handle">
+                <div class="card h-100">
+                  <div class="card-body wireless">
+                    <h4 class="card-title"><?php echo _("$client_title"); ?></h4>
+                    <div class="row ml-1">
+                      <div class="col-sm">
+                        <?php $valEcho=function($cl,$id) {$val = isset($cl[$id])&& !empty($cl[$id]) ? $cl[$id] : "-"; echo  htmlspecialchars($val,ENT_QUOTES);} ?>
+                        <?php if ($clientinfo["type"] == "wlan") : // WIRELESS ?>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Connected To"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"ssidutf8"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("AP Mac Address"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"ap-mac"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Bitrate"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"bitrate"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Signal Level"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"signal"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Transmit Power"); ?></div><div class="info-value col-xs-3"><?php echo htmlspecialchars($txPower, ENT_QUOTES); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Frequency"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"freq"); ?></div>
+                          </div>
+                          <?php elseif ($clientinfo["type"] == "phone" ) : // Smartphones (tethering over USB) ?>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Device"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"vendor")." ". $valEcho($clientinfo,"model"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("IP Address"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"ipaddress"); ?></div>
+                          </div>
+                          <?php elseif ($clientinfo["type"] == "hilink" ) : // MOBILE DATA - ROUTER MODE (HILINK) ?>
+                            <?php
+                                exec('ip route list |  sed -rn "s/default via (([0-9]{1,3}\.){3}[0-9]{1,3}).*dev '.$clientinfo["name"].'.*/\1/p"',$gw); // get gateway
+                                $gw=empty($gw) ? "" : $gw[0];
+                            ?>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Device"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"model")." (Hilink)"; ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Connection mode"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"mode"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Signal quality"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"signal"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Network"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"operator"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("WAN IP"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"wan_ip"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Web-GUI"); ?></div><div class="info-value col-xs-3"><?php if(!empty($gw)) echo '<a href="http://'.$gw.'" >'.$gw."</a>"; ?></div>
+                          </div>
+                          <?php elseif ($clientinfo["type"] == "ppp" ) : // MOBILE DATA MODEM) ?>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Device"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"model"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Connection mode"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"mode"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Signal strength"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"signal"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Network"); ?></div><div class="info-value col-xs-3"><?php  $valEcho($clientinfo,"operator"); ?></div>
+                          </div>
+                          <?php elseif  ($clientinfo["type"] == "eth" ) : // ETHERNET ?>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("Device"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"vendor")." ".$valEcho($clientinfo,"model"); ?></div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("IP Address"); ?></div><div class="info-value col-xs-3"><?php echo $valEcho($clientinfo,"ipaddress"); ?></div>
+                          </div>
+                          <?php else : // NO CLIENT ?>
+                          <div class="row mb-1">
+                            <div class="info-item col-xs-3"><?php echo _("No Client device or not yet configured"); ?></div>
+                          </div>
+                        <?php endif; ?>
                       </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("AP Mac Address"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"ap-mac"); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Bitrate"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"bitrate"); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Signal Level"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"signal"); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Transmit Power"); ?></div><div class="info-value col-xs-3"><?php echo htmlspecialchars($txPower, ENT_QUOTES); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Frequency"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"freq"); ?></div>
-                      </div>
-                    <?php elseif ($clientinfo["type"] == "phone" ) : // Smartphones (tethering over USB) ?>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Device"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"vendor")." ". $valEcho($clientinfo,"model"); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("IP Address"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"ipaddress"); ?></div>
-                      </div>
-                    <?php elseif ($clientinfo["type"] == "hilink" ) : // MOBILE DATA - ROUTER MODE (HILINK) ?>
-                      <?php
-                          exec('ip route list |  sed -rn "s/default via (([0-9]{1,3}\.){3}[0-9]{1,3}).*dev '.$clientinfo["name"].'.*/\1/p"',$gw); // get gateway
-                          $gw=empty($gw) ? "" : $gw[0];
-                      ?>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Device"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"model")." (Hilink)"; ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Connection mode"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"mode"); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Signal quality"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"signal"); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Network"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"operator"); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("WAN IP"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"wan_ip"); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Web-GUI"); ?></div><div class="info-value col-xs-3"><?php if(!empty($gw)) echo '<a href="http://'.$gw.'" >'.$gw."</a>"; ?></div>
-                      </div>
-                    <?php elseif ($clientinfo["type"] == "ppp" ) : // MOBILE DATA MODEM) ?>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Device"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"model"); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Connection mode"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"mode"); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Signal strength"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"signal"); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Network"); ?></div><div class="info-value col-xs-3"><?php  $valEcho($clientinfo,"operator"); ?></div>
-                      </div>
-                    <?php elseif  ($clientinfo["type"] == "eth" ) : // ETHERNET ?>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("Device"); ?></div><div class="info-value col-xs-3"><?php $valEcho($clientinfo,"vendor")." ".$valEcho($clientinfo,"model"); ?></div>
-                      </div>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("IP Address"); ?></div><div class="info-value col-xs-3"><?php echo $valEcho($clientinfo,"ipaddress"); ?></div>
-                      </div>
-                    <?php else : // NO CLIENT ?>
-                      <div class="row mb-1">
-                        <div class="info-item col-xs-3"><?php echo _("No Client device or not yet configured"); ?></div>
-                      </div>
-                    <?php endif; ?>
-                  </div>
-                  <?php if ($isClientConfigured) : ?>
-                     <div class="col-md d-flex">
-                        <?php
-                          preg_match("/.*\((\s*\d*)\s*%\s*\)/",$clientinfo["signal"],$match);
-                          $strLinkQuality=array_key_exists(1,$match) ? $match[1] : 0;
-                        ?>
-                        <script>var linkQ = <?php echo json_encode($strLinkQuality); ?>;</script>
-                        <div class="chart-container">
-                           <canvas id="divChartLinkQ"></canvas>
-                        </div>
-                     </div>
-                  <?php endif; ?>
-                </div><!--row-->
-              </div><!-- /.card-body -->
-            </div><!-- /.card -->
-          </div><!-- /.col-md-6 -->
-          <div class="col-sm-6">
-            <div class="card h-100 mb-3">
-              <div class="card-body">
-                <h4 class="card-title"><?php echo _("Connected Devices"); ?></h4>
-                <div class="table-responsive">
+                      <?php if ($isClientConfigured) : ?>
+                         <div class="col-md d-flex">
+                            <?php
+                              preg_match("/.*\((\s*\d*)\s*%\s*\)/",$clientinfo["signal"],$match);
+                              $strLinkQuality=array_key_exists(1,$match) ? $match[1] : 0;
+                            ?>
+                            <script>var linkQ = <?php echo json_encode($strLinkQuality); ?>;</script>
+                            <div class="chart-container">
+                               <canvas id="divChartLinkQ"></canvas>
+                            </div>
+                         </div>
+                      <?php endif; ?>
+                    </div><!-- /.row-->
+                  </div><!-- /.card-body -->
+                </div><!-- /.card -->
+              </div><!-- /.grid-stack-item-content -->
+            </div><!-- /.grid-stack-item -->
+
+            <!-- Connected devices widget -->
+            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="6" gs-y="5" gs-w="6" gs-h="3" gs-id="devices">
+              <div class="grid-stack-item-content ui-draggable-handle">
+                <div class="card h-100 mb-3">
+                <div class="card-body">
+                  <h4 class="card-title"><?php echo _("Connected Devices"); ?></h4>
+                  <div class="table-responsive">
                   <table class="table table-hover">
                     <thead>
                       <tr>
@@ -171,11 +181,14 @@
                   <?php elseif (sizeof($clients) ==0) : ?>
                       <div class="col-lg-12 mt-3"><?php echo _("No connected devices");?></div>
                   <?php endif; ?>
-                </div><!-- /.table-responsive -->
-              </div><!-- /.card-body -->
-            </div><!-- /.card -->
-          </div><!-- /.col-md-6 -->
-        </div><!-- /.row -->
+                  </div><!-- /.table-responsive -->
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /.grid-stack-item-content -->
+          </div><!-- /.grid-stack-item -->
+        </div><!-- /.col -->
+      </div><!-- /.grid-stack -->
+
         <div class="col-lg-12 mt-3">
           <div class="row">
             <form action="wlan0_info" method="POST">
@@ -188,6 +201,7 @@
                     <?php endif ?>
                 <?php endif ?>
               <button type="button" onClick="window.location.reload();" class="btn btn-outline btn-primary"><i class="fas fa-sync-alt"></i> <?php echo _("Refresh") ?></button>
+              <button type="button" class="btn btn-outline btn-primary gridstack-edit"><i class="fas fa-pen"></i></button>
             </form>
           </div>
         </div>
