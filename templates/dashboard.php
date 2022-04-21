@@ -142,7 +142,7 @@
                 <div class="card-body">
                   <h4 class="card-title"><?php echo _("Connected Devices"); ?></h4>
                   <div class="table-responsive">
-                  <table class="table table-hover table-sm">
+                  <table class="table table-hover">
                     <thead>
                       <tr>
                         <?php if ($bridgedEnable == 1) : ?>
@@ -160,7 +160,7 @@
                             <td><small class="text-muted"><?php echo _("Bridged AP mode is enabled. For Hostname and IP, see your router's admin page.");?></small></td>
                           </tr>
                         <?php endif; ?>
-                        <?php foreach (array_slice($clients,0, 3) as $client) : ?>
+                        <?php foreach (array_slice($clients,0, 2) as $client) : ?>
                         <tr>
                           <?php if ($bridgedEnable == 1): ?>
                             <td><?php echo htmlspecialchars($client, ENT_QUOTES) ?></td>
@@ -175,8 +175,8 @@
                     </tbody>
                   </table>
                   <?php if (sizeof($clients) >2) : ?>
-                      <div class="d-flex align-items-end flex-column">
-                        <a class="btn btn-outline btn-light" role="button" href="<?php echo $moreLink ?>"><?php echo _("More");?>  <i class="fas fa-chevron-right"></i></a>
+                      <div class="col-lg-12 float-right">
+                        <a class="btn btn-outline-info" role="button" href="<?php echo $moreLink ?>"><?php echo _("More");?>  <i class="fas fa-chevron-right"></i></a>
                       </div>
                   <?php elseif (sizeof($clients) ==0) : ?>
                       <div class="col-lg-12 mt-3"><?php echo _("No connected devices");?></div>
