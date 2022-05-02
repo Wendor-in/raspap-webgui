@@ -49,7 +49,7 @@ With the prerequisites done, you can proceed with either the Quick installer or 
 ## Quick installer
 Install RaspAP from your device's shell prompt:
 ```sh
-curl -sL https://install.raspap.com | bash
+curl -sL https://install.raspap.com | bash -s -- --yes --repo=https://github.com/Wendor-in/raspap-webgui
 ```
 The [installer](https://docs.raspap.com/quick/) will complete the steps in the manual installation (below) for you.
 

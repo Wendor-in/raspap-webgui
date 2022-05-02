@@ -221,6 +221,12 @@ function loadInterfaceDHCPSelect() {
     });
 }
 
+function goBack(){
+    if(window.goBackURL){
+        window.location = window.goBackURL;
+    }
+}
+
 function setDHCPToggles(state) {
     if ($('#chkfallback').is(':checked') && state) {
         $('#chkfallback').prop('checked', state);
@@ -509,6 +515,9 @@ $("#sidebarToggleTopbar").on('click', function(e) {
     $("body").toggleClass("sidebar-toggled");
     $(".sidebar").toggleClass("toggled d-none");
 });
+$("#goback").on('click', function(e) {
+    goBack()
+});
 
 // Overrides SB Admin 2
 $("#sidebarToggle, #sidebarToggleTop").on('click', function(e) {
@@ -536,6 +545,10 @@ $(window).on("load resize",function(e) {
 // Adds active class to current nav-item
 $(window).bind("load", function() {
     var url = window.location;
+    var parts = url.search.split('goBackURL=')
+    if(parts.length>1){
+        window.goBackURL = parts[1];
+    }
     $('ul.navbar-nav a').filter(function() {
       return this.href == url;
     }).parent().addClass('active');
